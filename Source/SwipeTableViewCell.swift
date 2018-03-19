@@ -254,6 +254,8 @@ open class SwipeTableViewCell: UITableViewCell {
         }
         
         self.actionsView = actionsView
+        
+        actionsView.setNeedsUpdateConstraints()
 
         state = .dragging
         
